@@ -50,14 +50,13 @@ const randomReviewGenerator = () => {
   };
 
   generator(counter);
-  console.log('SEED HAS BEEN PLANTED!');
+
   return sampleReviews;
 };
 
 const insertSampleReviews = () => {
   Review.create(randomReviewGenerator())
     .then(() => mongoose.disconnect());
-  console.log('MONGO SLEEP NOW!');
 };
 
 insertSampleReviews();
