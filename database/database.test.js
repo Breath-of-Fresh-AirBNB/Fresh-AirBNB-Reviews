@@ -8,10 +8,15 @@ const mongoUrl = 'mongodb://localhost/reviews';
 
 beforeAll(async () => {
   await mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true });
+  mongoose.connection.on('error', console.error.bind(console, 'connection error:'));
+  mongoose.connection.once('open', () => {
+    console.log('MONGO SMASH!');
+  });
 });
 
 afterAll(async () => {
   mongoose.disconnect();
+  console.log('MONGO SLEEP NOW!');
 });
 
 // will create a Review for homeId 101 (test home)
