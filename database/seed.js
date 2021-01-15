@@ -24,7 +24,7 @@ const randomReviewGenerator = () => {
 
   // eslint-disable-next-line no-shadow
   const generator = (counter) => {
-    if (counter < 1500) {
+    if (counter < 10) {
       const review = {
         homeId: Math.floor(Math.random() * 100) + 1,
         user: users[Math.floor(Math.random() * (0.999) * (users.length))],

@@ -22,7 +22,7 @@ afterAll(async () => {
 // will create a Review for homeId 101 (test home)
 describe('Database Test for Dummy inserted data House Id 101', () => {
   test('Should Create a review', async () => Review.create({
-    homeId: 101, user: 'Joey', cleanliness: 1, communication: 5, checkIn: 5, accuracy: 3, location: 4, value: 2, post: 'string', createdAt: '2018-7-16T05:05:26.037z',
+    homeId: 101, user: 'Joey', cleanliness: 1, communication: 5, checkIn: 5, accuracy: 3, location: 4, value: 2, post: 'strings', createdAt: '2018-7-16T05:05:26.037z',
   })
     .then((results) => {
       expect(results).not.toBeNull();
@@ -61,7 +61,7 @@ describe('Database Test for Dummy inserted data House Id 101', () => {
     }));
   test('Review should contain a post', async () => Review.findOne({ homeId: 101 })
     .then((results) => {
-      expect(results).toHaveProperty('post', 'string');
+      expect(results).toHaveProperty('post', 'strings');
     }));
   test('Review should contain a createdAt property', async () => Review.findOne({ homeId: 101 })
     .then((results) => {
