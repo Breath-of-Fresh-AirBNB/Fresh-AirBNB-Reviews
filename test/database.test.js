@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-console */
 const mongoose = require('mongoose');
-const db = require('./index.js');
-const Review = require('./review.js');
+const db = require('../database/index.js');
+const Review = require('../database/review.js');
 
 const mongoUrl = 'mongodb://localhost/reviews';
 

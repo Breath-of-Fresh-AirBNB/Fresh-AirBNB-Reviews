@@ -19,7 +19,6 @@ app.get('/reviews', (req, res) => {
 
 app.get('/reviews/:homeId', (req, res) => {
   const id = { homeId: Number(req.params.homeId) };
-  console.log('Post Man Says HELLO');
   Review.find(id, (err, result) => {
     if (err) res.status(400).send();
     res.status(200).send(result);
