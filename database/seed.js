@@ -1,8 +1,14 @@
+/* eslint-disable no-console */
+/* eslint-disable no-unused-vars */
 const { LoremIpsum } = require('lorem-ipsum');
 const mongoose = require('mongoose');
-// eslint-disable-next-line no-unused-vars
 const db = require('./index.js');
 const Review = require('./review.js');
+
+// eslint-disable-next-line dot-notation
+mongoose.connection.collections['reviews'].drop((err) => {
+  console.log('collection dropped');
+});
 
 const lorem = new LoremIpsum({
   sentencesPerParagraph: {
@@ -24,7 +30,7 @@ const randomReviewGenerator = () => {
 
   // eslint-disable-next-line no-shadow
   const generator = (counter) => {
-    if (counter < 10) {
+    if (counter < 1000) {
       const review = {
         homeId: Math.floor(Math.random() * 100) + 1,
         user: users[Math.floor(Math.random() * (0.999) * (users.length))],
@@ -44,12 +50,14 @@ const randomReviewGenerator = () => {
   };
 
   generator(counter);
+  console.log('SEED HAS BEEN PLANTED!');
   return sampleReviews;
 };
 
 const insertSampleReviews = () => {
   Review.create(randomReviewGenerator())
     .then(() => mongoose.disconnect());
+  console.log('MONGO SLEEP NOW!');
 };
 
 insertSampleReviews();
