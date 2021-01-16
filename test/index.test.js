@@ -16,7 +16,6 @@ describe('Server API connection tests', () => {
   });
   test('Should Get Reviews from database from a specific id', async () => {
     const results = await axios.get('http://localhost:3001/reviews/102');
-    console.log(results);
     expect(results).not.toBeNull();
     expect(results.data.length).toBeGreaterThanOrEqual(1);
     expect(results.data[0]).toHaveProperty('homeId', 102);
