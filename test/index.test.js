@@ -4,7 +4,7 @@ const axios = require('axios');
 describe('Server API connection tests', () => {
   test('Should Post Review to database', async () => {
     const results = await axios.post('http://localhost:3001/reviews', {
-      homeId: 102, user: 'Joey', cleanliness: 1, communication: 5, checkIn: 5, accuracy: 3, location: 4, value: 2, post: 'strings', createdAt: '2018-7-16T05:05:26.037z',
+      homeId: 102, user: 'Joey', cleanliness: 1, communication: 5, checkIn: 5, accuracy: 3, location: 4, value: 2, post: 'strings', createdAt: '20200101',
     });
     expect(results).not.toBeNull();
     expect(results.data).toHaveProperty('user', 'Joey');

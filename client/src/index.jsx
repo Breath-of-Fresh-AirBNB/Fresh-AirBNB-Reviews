@@ -1,8 +1,15 @@
+/* eslint-disable import/no-named-as-default-member */
 /* eslint-disable import/extensions */
 /* eslint-disable react/no-unused-state */
 import React from 'react';
 import ReactDom from 'react-dom';
 import StarComponents from './components/starComponents.jsx';
+import Cleanliness from './components/ratingBars/cleanliness.jsx';
+import Accuracy from './components/ratingBars/accuracy.jsx';
+import Communication from './components/ratingBars/communication';
+import Location from './components/ratingBars/location';
+import CheckIn from './components/ratingBars/checkin';
+import Value from './components/ratingBars/value';
 
 const axios = require('axios');
 
@@ -42,7 +49,17 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <StarComponents reviewRatings={this.state.reviewsById} />
+        <div>
+          <StarComponents reviewRatings={this.state.reviewsById} />
+        </div>
+        <div>
+          <Cleanliness reviewCleanliness={this.state.reviewsById} />
+          <Accuracy reviewAccuracy={this.state.reviewsById} />
+          <Communication reviewCommunication={this.state.reviewsById} />
+          <Location reviewLocation={this.state.reviewsById} />
+          <CheckIn reviewCheckIn={this.state.reviewsById} />
+          <Value reviewValue={this.state.reviewsById} />
+        </div>
       </div>
     );
   }

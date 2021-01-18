@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 
 const StarComponents = (props) => {
-  console.log(props.reviewRatings);
+  console.log('from Star', props.reviewRatings);
   const vals = props.reviewRatings.map((o) => {
     let m = 0;
     const values = Object.values(o);
@@ -21,7 +21,7 @@ const StarComponents = (props) => {
     <div>
       <Box component="fieldset" mb={3} borderColor="transparent">
         <Typography component="legend">Ratings</Typography>
-        <Rating name="read-only" value={rating.toFixed(1)} precision={0.5} readOnly />
+        <Rating name="read-only" value={rating.toFixed(1)} precision={0.10} readOnly />
       </Box>
     </div>
   );
