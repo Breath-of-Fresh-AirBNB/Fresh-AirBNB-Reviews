@@ -12,7 +12,6 @@ const useStyles = makeStyles({
 
 const Cleanliness = (props) => {
   const vals = props.reviewCleanliness.map((o) => o.cleanliness);
-
   const rating = (vals.reduce((m, i) => (m += i), 0) / vals.length);
   const classes = useStyles();
 

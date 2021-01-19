@@ -12,10 +12,8 @@ const useStyles = makeStyles({
 
 const Location = (props) => {
   const vals = props.reviewLocation.map((o) => o.location);
-
   const rating = (vals.reduce((m, i) => (m += i), 0) / vals.length);
   const classes = useStyles();
-  console.log(rating.toFixed(1));
 
   return (
     <div className={classes.root}>

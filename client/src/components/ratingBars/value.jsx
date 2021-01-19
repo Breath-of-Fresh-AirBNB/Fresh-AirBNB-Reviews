@@ -12,7 +12,6 @@ const useStyles = makeStyles({
 
 const Value = (props) => {
   const vals = props.reviewValue.map((o) => o.value);
-
   const rating = (vals.reduce((m, i) => (m += i), 0) / vals.length);
   const classes = useStyles();
 

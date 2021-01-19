@@ -12,15 +12,13 @@ const useStyles = makeStyles({
 
 const CheckIn = (props) => {
   const vals = props.reviewCheckIn.map((o) => o.checkIn);
-
   const rating = (vals.reduce((m, i) => (m += i), 0) / vals.length);
   const classes = useStyles();
-  console.log(rating.toFixed(1));
 
   return (
     <div className={classes.root}>
       Check-In
-      <LinearProgress variant="determinate" value={rating.toFixed(1) * 20} />
+      <LinearProgress color="primary" variant="determinate" value={rating.toFixed(1) * 20} />
       <>
         {' '}
         {rating.toFixed(1)}

@@ -12,7 +12,6 @@ const useStyles = makeStyles({
 
 const Accuracy = (props) => {
   const vals = props.reviewAccuracy.map((o) => o.accuracy);
-
   const rating = (vals.reduce((m, i) => (m += i), 0) / vals.length);
   const classes = useStyles();
 

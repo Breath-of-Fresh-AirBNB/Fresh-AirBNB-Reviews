@@ -15,7 +15,6 @@ const StarComponents = (props) => {
   });
 
   const rating = (vals.reduce((m, i) => m += i, 0) / vals.length);
-  console.log(rating.toFixed(1));
 
   return (
     <div>
