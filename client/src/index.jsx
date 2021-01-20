@@ -75,3 +75,5 @@ class App extends React.Component {
 
 // eslint-disable-next-line no-undef
 ReactDom.render(<App />, document.getElementById('reviews'));
+
+export default App;
