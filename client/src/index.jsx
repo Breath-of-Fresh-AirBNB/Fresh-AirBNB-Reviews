@@ -11,13 +11,6 @@ import Location from './components/ratingBars/location';
 import CheckIn from './components/ratingBars/checkin';
 import Value from './components/ratingBars/value';
 import MostRecentReviews from './components/reviews/mostRecentReviews.jsx';
-// font imports
-// import './fonts/AirbnbCerealBlack.ttf';
-// import './fonts/AirbnbCerealBold.ttf';
-// import './fonts/AirbnbCerealBook.ttf';
-// import './fonts/AirbnbCerealExtraBold.ttf';
-// import './fonts/AirbnbCerealLight.ttf';
-// import './fonts/AirbnbCerealMedium.ttf';
 
 const axios = require('axios');
 
