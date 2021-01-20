@@ -24,7 +24,7 @@ const lorem = new LoremIpsum({
 const randomReviewGenerator = () => {
   const sampleReviews = [];
   const users = ['Adam', 'Amanda', 'Alex', 'Aaron', 'Ashley', 'Ben', 'Beverly', 'Carl',
-    'Christina', 'Dan', 'David', 'Diana', 'Edward', 'Fred', 'Frank', 'George', 'Hal', 'Haelie', 'Hank', 'Heater', 'Ike', 'John', 'Jack', 'Joe', 'Javan', 'Julie', 'Jennifer', 'Kyle', 'Larry', 'Linda', 'Megan', 'Melissa', 'Melinda', 'Monte', 'Matthew', 'Mark', 'Nathan', 'Natalie', 'Otto', 'Olivia', 'Paula', 'Peter', 'Roger', 'Randal', 'Sarah', 'Steve', 'Theresa', 'Thomas', 'Tim', 'Ty', 'Victor', 'Vicki', 'Walter'];
+    'Christina', 'Dan', 'David', 'Diana', 'Edward', 'Fred', 'Frank', 'George', 'Hal', 'Haelie', 'Hank', 'Heather', 'Ike', 'John', 'Jack', 'Joe', 'Javan', 'Julie', 'Jennifer', 'Kyle', 'Larry', 'Linda', 'Megan', 'Melissa', 'Melinda', 'Monte', 'Matthew', 'Mark', 'Nathan', 'Natalie', 'Otto', 'Olivia', 'Paula', 'Peter', 'Roger', 'Randal', 'Sarah', 'Steve', 'Theresa', 'Thomas', 'Tim', 'Ty', 'Victor', 'Vicki', 'Walter'];
   const month = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
   const days = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28'];
   const year = [2017, 2018, 2019, 2020];

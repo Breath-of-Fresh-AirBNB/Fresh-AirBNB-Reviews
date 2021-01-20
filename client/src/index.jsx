@@ -10,6 +10,14 @@ import Communication from './components/ratingBars/communication';
 import Location from './components/ratingBars/location';
 import CheckIn from './components/ratingBars/checkin';
 import Value from './components/ratingBars/value';
+import MostRecentReviews from './components/reviews/mostRecentReviews.jsx';
+// font imports
+// import './fonts/AirbnbCerealBlack.ttf';
+// import './fonts/AirbnbCerealBold.ttf';
+// import './fonts/AirbnbCerealBook.ttf';
+// import './fonts/AirbnbCerealExtraBold.ttf';
+// import './fonts/AirbnbCerealLight.ttf';
+// import './fonts/AirbnbCerealMedium.ttf';
 
 const axios = require('axios');
 
@@ -59,6 +67,9 @@ class App extends React.Component {
           <Location reviewLocation={this.state.reviewsById} />
           <CheckIn reviewCheckIn={this.state.reviewsById} />
           <Value reviewValue={this.state.reviewsById} />
+        </div>
+        <div>
+          <MostRecentReviews recentReviews={this.state.reviewsById} />
         </div>
       </div>
     );
