@@ -23,10 +23,6 @@ const StarComponents = (props) => {
           OverAll Rating
           {' '}
           {Number(rating.toFixed(1))}
-          {' '}
-          (
-          {props.reviewRatings.length}
-          )
         </Typography>
         <Rating name="read-only" value={Number(rating.toFixed(1))} precision={0.10} readOnly />
       </Box>

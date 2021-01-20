@@ -1,4 +1,3 @@
-/* eslint-disable import/no-named-as-default-member */
 /* eslint-disable import/extensions */
 /* eslint-disable react/no-unused-state */
 import React from 'react';
@@ -10,6 +9,7 @@ import Communication from './components/ratingBars/communication';
 import Location from './components/ratingBars/location';
 import CheckIn from './components/ratingBars/checkin';
 import Value from './components/ratingBars/value';
+import Modal from './components/modal.jsx';
 import MostRecentReviews from './components/reviews/mostRecentReviews.jsx';
 
 const axios = require('axios');
@@ -48,21 +48,25 @@ class App extends React.Component {
   }
 
   render() {
+    const { reviewsById } = this.state;
     return (
       <div>
         <div>
-          <StarComponents reviewRatings={this.state.reviewsById} />
+          <StarComponents reviewRatings={reviewsById} />
         </div>
         <div>
-          <Cleanliness reviewCleanliness={this.state.reviewsById} />
-          <Accuracy reviewAccuracy={this.state.reviewsById} />
-          <Communication reviewCommunication={this.state.reviewsById} />
-          <Location reviewLocation={this.state.reviewsById} />
-          <CheckIn reviewCheckIn={this.state.reviewsById} />
-          <Value reviewValue={this.state.reviewsById} />
+          <Cleanliness reviewCleanliness={reviewsById} />
+          <Accuracy reviewAccuracy={reviewsById} />
+          <Communication reviewCommunication={reviewsById} />
+          <Location reviewLocation={reviewsById} />
+          <CheckIn reviewCheckIn={reviewsById} />
+          <Value reviewValue={reviewsById} />
         </div>
         <div>
-          <MostRecentReviews recentReviews={this.state.reviewsById} />
+          <MostRecentReviews recentReviews={reviewsById} />
+        </div>
+        <div>
+          <Modal reviewsById={reviewsById} />
         </div>
       </div>
     );
