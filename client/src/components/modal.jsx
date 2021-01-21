@@ -18,6 +18,7 @@ function getModalStyle() {
     top: `${top}%`,
     left: `${left}%`,
     transform: `translate(-${top}%, -${left}%)`,
+    borderRadius: '15px',
   };
 }
 
@@ -31,6 +32,7 @@ const useStyles = makeStyles((theme) => ({
     border: '2px solid #000',
     boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3),
+    borderRadius: '15px',
   },
 }));
 
@@ -60,10 +62,10 @@ export default function SimpleModal(props) {
         <CheckIn reviewCheckIn={props.reviewsById} />
         <Value reviewValue={props.reviewsById} />
       </div>
-      <div>
+      <div className="flex-container-reviews">
         <ReviewsById reviewsById={props.reviewsById} />
       </div>
-      <button className="user" type="button" onClick={handleClose}>
+      <button className="button" type="button" onClick={handleClose}>
         Close All Reviews
       </button>
     </div>
@@ -71,7 +73,7 @@ export default function SimpleModal(props) {
 
   return (
     <div>
-      <button className="user" type="button" onClick={handleOpen}>
+      <button className="button" type="button" onClick={handleOpen}>
         Show All
         {' '}
         {props.reviewsById.length}
