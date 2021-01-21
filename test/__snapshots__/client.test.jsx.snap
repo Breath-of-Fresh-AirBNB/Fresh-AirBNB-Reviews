@@ -2,136 +2,156 @@
 
 exports[`Each Component matches snapshot Accuracy matches the snapshot 1`] = `
 <div
-  className="makeStyles-root-3"
+  className="flex-item, rating"
 >
   Accuracy
-  <div
-    aria-valuemax={100}
-    aria-valuemin={0}
-    aria-valuenow={60}
-    className="MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate"
-    role="progressbar"
-  >
-    <div
-      className="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate"
-      style={
-        Object {
-          "transform": "translateX(-40%)",
-        }
-      }
-    />
-  </div>
    
   3.0
    
+  <div
+    className="makeStyles-root-3"
+  >
+    <div
+      aria-valuemax={100}
+      aria-valuemin={0}
+      aria-valuenow={60}
+      className="MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate"
+      role="progressbar"
+    >
+      <div
+        className="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate"
+        style={
+          Object {
+            "transform": "translateX(-40%)",
+          }
+        }
+      />
+    </div>
+  </div>
 </div>
 `;
 
 exports[`Each Component matches snapshot CheckIn matches the snapshot 1`] = `
 <div
-  className="makeStyles-root-4"
+  className="flex-item, rating"
 >
   Check-In
-  <div
-    aria-valuemax={100}
-    aria-valuemin={0}
-    aria-valuenow={60}
-    className="MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate"
-    role="progressbar"
-  >
-    <div
-      className="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate"
-      style={
-        Object {
-          "transform": "translateX(-40%)",
-        }
-      }
-    />
-  </div>
    
   3.0
    
+  <div
+    className="makeStyles-root-4"
+  >
+    <div
+      aria-valuemax={100}
+      aria-valuemin={0}
+      aria-valuenow={60}
+      className="MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate"
+      role="progressbar"
+    >
+      <div
+        className="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate"
+        style={
+          Object {
+            "transform": "translateX(-40%)",
+          }
+        }
+      />
+    </div>
+  </div>
 </div>
 `;
 
 exports[`Each Component matches snapshot Cleanliness matches the snapshot 1`] = `
 <div
-  className="makeStyles-root-5"
+  className="flex-item, rating"
 >
   Cleanliness
-  <div
-    aria-valuemax={100}
-    aria-valuemin={0}
-    aria-valuenow={60}
-    className="MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate"
-    role="progressbar"
-  >
-    <div
-      className="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate"
-      style={
-        Object {
-          "transform": "translateX(-40%)",
-        }
-      }
-    />
-  </div>
    
   3.0
    
+  <div
+    className="makeStyles-root-5"
+  >
+    <div
+      aria-valuemax={100}
+      aria-valuemin={0}
+      aria-valuenow={60}
+      className="MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate"
+      role="progressbar"
+    >
+      <div
+        className="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate"
+        style={
+          Object {
+            "transform": "translateX(-40%)",
+          }
+        }
+      />
+    </div>
+  </div>
 </div>
 `;
 
 exports[`Each Component matches snapshot Communication matches the snapshot 1`] = `
 <div
-  className="makeStyles-root-6"
+  className="flex-item, rating"
 >
   Communication
-  <div
-    aria-valuemax={100}
-    aria-valuemin={0}
-    aria-valuenow={60}
-    className="MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate"
-    role="progressbar"
-  >
-    <div
-      className="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate"
-      style={
-        Object {
-          "transform": "translateX(-40%)",
-        }
-      }
-    />
-  </div>
    
   3.0
    
+  <div
+    className="makeStyles-root-6"
+  >
+    <div
+      aria-valuemax={100}
+      aria-valuemin={0}
+      aria-valuenow={60}
+      className="MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate"
+      role="progressbar"
+    >
+      <div
+        className="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate"
+        style={
+          Object {
+            "transform": "translateX(-40%)",
+          }
+        }
+      />
+    </div>
+  </div>
 </div>
 `;
 
 exports[`Each Component matches snapshot Location matches the snapshot 1`] = `
 <div
-  className="makeStyles-root-7"
+  className="flex-item, rating"
 >
   Location
-  <div
-    aria-valuemax={100}
-    aria-valuemin={0}
-    aria-valuenow={60}
-    className="MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate"
-    role="progressbar"
-  >
-    <div
-      className="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate"
-      style={
-        Object {
-          "transform": "translateX(-40%)",
-        }
-      }
-    />
-  </div>
    
   3.0
    
+  <div
+    className="makeStyles-root-7"
+  >
+    <div
+      aria-valuemax={100}
+      aria-valuemin={0}
+      aria-valuenow={60}
+      className="MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate"
+      role="progressbar"
+    >
+      <div
+        className="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate"
+        style={
+          Object {
+            "transform": "translateX(-40%)",
+          }
+        }
+      />
+    </div>
+  </div>
 </div>
 `;
 
@@ -153,106 +173,121 @@ exports[`Each Component matches snapshot Modal matches the snapshot 1`] = `
 
 exports[`Each Component matches snapshot MostRecentReviews matches the snapshot with more than 4 reviews 1`] = `
 <div>
-  <ul>
-    <p
+  <div
+    className="flex-post"
+  >
+    <div
       className="user"
     >
       Joey
-    </p>
-    <p
+    </div>
+    <div
       className="date"
     >
       Jan 2020
-    </p>
-    <p
+    </div>
+    <br />
+    <div
       className="paragraphs"
     >
       strings
-    </p>
+    </div>
     <br />
     <br />
-  </ul>
-  <ul>
-    <p
+  </div>
+  <div
+    className="flex-post"
+  >
+    <div
       className="user"
     >
       Alec
-    </p>
-    <p
+    </div>
+    <div
       className="date"
     >
       Jan 2020
-    </p>
-    <p
+    </div>
+    <br />
+    <div
       className="paragraphs"
     >
       strings
-    </p>
+    </div>
     <br />
     <br />
-  </ul>
-  <ul>
-    <p
+  </div>
+  <div
+    className="flex-post"
+  >
+    <div
       className="user"
     >
       Jon
-    </p>
-    <p
+    </div>
+    <div
       className="date"
     >
       Jan 2020
-    </p>
-    <p
+    </div>
+    <br />
+    <div
       className="paragraphs"
     >
       strings
-    </p>
+    </div>
     <br />
     <br />
-  </ul>
-  <ul>
-    <p
+  </div>
+  <div
+    className="flex-post"
+  >
+    <div
       className="user"
     >
       Randal
-    </p>
-    <p
+    </div>
+    <div
       className="date"
     >
       Jan 2020
-    </p>
-    <p
+    </div>
+    <br />
+    <div
       className="paragraphs"
     >
       strings
-    </p>
+    </div>
     <br />
     <br />
-  </ul>
+  </div>
 </div>
 `;
 
 exports[`Each Component matches snapshot MostRecentReviews matches the snapshot with only 1 review 1`] = `
 <div>
-  <ul>
-    <p
+  <div
+    className="flex-post"
+  >
+    <div
       className="user"
     >
       Joey
-    </p>
-    <p
+    </div>
+    <div
       className="date"
     >
       Jan 2020
-    </p>
-    <p
+    </div>
+    <br />
+    <div
       className="paragraphs"
     >
       strings
-    </p>
+    </div>
     <br />
     <br />
-  </ul>
+  </div>
 </div>
 `;
 
@@ -361,13 +396,13 @@ exports[`Each Component matches snapshot StarComponents matches the snapshot 1`]
   <fieldset
     className="MuiBox-root MuiBox-root-2"
   >
-    <legend
-      className="MuiTypography-root MuiTypography-body1"
+    <div
+      className="user"
     >
       OverAll Rating
        
       3
-    </legend>
+    </div>
     <span
       aria-label="3 Stars"
       className="MuiRating-root MuiRating-readOnly"
@@ -1617,27 +1652,32 @@ exports[`Each Component matches snapshot StarComponents matches the snapshot 1`]
 
 exports[`Each Component matches snapshot Value matches the snapshot 1`] = `
 <div
-  className="makeStyles-root-8"
+  className="flex-item, rating"
 >
   Value
-  <div
-    aria-valuemax={100}
-    aria-valuemin={0}
-    aria-valuenow={60}
-    className="MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate"
-    role="progressbar"
-  >
-    <div
-      className="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate"
-      style={
-        Object {
-          "transform": "translateX(-40%)",
-        }
-      }
-    />
-  </div>
    
   3.0
    
+  <div
+    className="makeStyles-root-8"
+  >
+    <div
+      aria-valuemax={100}
+      aria-valuemin={0}
+      aria-valuenow={60}
+      className="MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate"
+      role="progressbar"
+    >
+      <div
+        className="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate"
+        style={
+          Object {
+            "transform": "translateX(-40%)",
+          }
+        }
+      />
+    </div>
+  </div>
+  <br />
 </div>
 `;

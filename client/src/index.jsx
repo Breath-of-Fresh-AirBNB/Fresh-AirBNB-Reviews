@@ -54,7 +54,7 @@ class App extends React.Component {
         <div>
           <StarComponents reviewRatings={reviewsById} />
         </div>
-        <div>
+        <div className="flex-container">
           <Cleanliness reviewCleanliness={reviewsById} />
           <Accuracy reviewAccuracy={reviewsById} />
           <Communication reviewCommunication={reviewsById} />
@@ -62,7 +62,7 @@ class App extends React.Component {
           <CheckIn reviewCheckIn={reviewsById} />
           <Value reviewValue={reviewsById} />
         </div>
-        <div>
+        <div className="flex-container">
           <MostRecentReviews recentReviews={reviewsById} />
         </div>
         <div>

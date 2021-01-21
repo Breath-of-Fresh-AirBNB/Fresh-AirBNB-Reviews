@@ -13,15 +13,16 @@ const MostRecentReviews = (props) => {
     fourMostRecent = props.recentReviews;
   }
   return (
-    <div>
+    <div className="flex-container-post">
       {fourMostRecent.map((reviews) => (
-        <ul key={reviews._id}>
-          <p className="user">{reviews.user}</p>
-          <p className="date">{moment(reviews.createdAt).format('MMM YYYY')}</p>
-          <p className="paragraphs">{reviews.post}</p>
+        <div className="flex-post" key={reviews._id}>
+          <div className="user">{reviews.user}</div>
+          <div className="date">{moment(reviews.createdAt).format('MMM YYYY')}</div>
+          <br />
+          <div className="paragraphs">{reviews.post}</div>
           <br />
           <br />
-        </ul>
+        </div>
       ))}
     </div>
   );

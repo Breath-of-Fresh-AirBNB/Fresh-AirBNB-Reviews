@@ -2,7 +2,6 @@
 /* eslint-disable no-param-reassign */
 import React from 'react';
 import Rating from '@material-ui/lab/Rating';
-import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 
 const StarComponents = (props) => {
@@ -19,11 +18,11 @@ const StarComponents = (props) => {
   return (
     <div>
       <Box component="fieldset" mb={3} borderColor="transparent">
-        <Typography component="legend">
+        <div className="user">
           OverAll Rating
           {' '}
           {Number(rating.toFixed(1))}
-        </Typography>
+        </div>
         <Rating name="read-only" value={Number(rating.toFixed(1))} precision={0.10} readOnly />
       </Box>
     </div>

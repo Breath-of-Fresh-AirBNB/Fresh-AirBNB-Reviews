@@ -6,7 +6,7 @@ import LinearProgress from '@material-ui/core/LinearProgress';
 
 const useStyles = makeStyles({
   root: {
-    width: '10%',
+    width: '25%',
   },
 });
 
@@ -16,14 +16,14 @@ const CheckIn = (props) => {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <div className="flex-item, rating">
       Check-In
-      <LinearProgress color="primary" variant="determinate" value={rating.toFixed(1) * 20} />
-      <>
-        {' '}
-        {rating.toFixed(1)}
-        {' '}
-      </>
+      {' '}
+      {rating.toFixed(1)}
+      {' '}
+      <div className={classes.root}>
+        <LinearProgress color="primary" variant="determinate" value={rating.toFixed(1) * 20} />
+      </div>
     </div>
   );
 };

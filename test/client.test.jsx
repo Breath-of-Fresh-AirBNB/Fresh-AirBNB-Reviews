@@ -1,6 +1,3 @@
-/* eslint-disable react/jsx-filename-extension */
-/* eslint-disable jest/no-disabled-tests */
-/* eslint-disable no-unused-expressions */
 import React from 'react';
 import renderer from 'react-test-renderer';
 import Modal from '../client/src/components/modal.jsx';
