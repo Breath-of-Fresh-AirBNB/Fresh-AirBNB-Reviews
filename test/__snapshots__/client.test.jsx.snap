@@ -172,7 +172,9 @@ exports[`Each Component matches snapshot Modal matches the snapshot 1`] = `
 `;
 
 exports[`Each Component matches snapshot MostRecentReviews matches the snapshot with more than 4 reviews 1`] = `
-<div>
+<div
+  className="flex-container-post"
+>
   <div
     className="flex-post"
   >
@@ -265,7 +267,9 @@ exports[`Each Component matches snapshot MostRecentReviews matches the snapshot 
 `;
 
 exports[`Each Component matches snapshot MostRecentReviews matches the snapshot with only 1 review 1`] = `
-<div>
+<div
+  className="flex-container-post"
+>
   <div
     className="flex-post"
   >

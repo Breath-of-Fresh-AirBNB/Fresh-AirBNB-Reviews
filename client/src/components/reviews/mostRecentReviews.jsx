@@ -19,7 +19,7 @@ const MostRecentReviews = (props) => {
           <div className="user">{reviews.user}</div>
           <div className="date">{moment(reviews.createdAt).format('MMM YYYY')}</div>
           <br />
-          <div className="paragraphs">{reviews.post}</div>
+          <div className="rating">{reviews.post}</div>
           <br />
           <br />
         </div>

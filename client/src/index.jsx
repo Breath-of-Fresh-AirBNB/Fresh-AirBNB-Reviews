@@ -62,6 +62,9 @@ class App extends React.Component {
           <CheckIn reviewCheckIn={reviewsById} />
           <Value reviewValue={reviewsById} />
         </div>
+        <div>
+          <span className="user">MostRecentReviews</span>
+        </div>
         <div className="flex-container">
           <MostRecentReviews recentReviews={reviewsById} />
         </div>
