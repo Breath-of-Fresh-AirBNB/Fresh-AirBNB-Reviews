@@ -1,0 +1,137 @@
+@font-face {
+  font-family: 'Cereal Extra Bold';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/AirbnbCerealExtraBold.ttf');
+}
+@font-face {
+  font-family: 'Cereal Light';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/AirbnbCerealLight.ttf');
+}
+@font-face {
+  font-family: 'Cereal Medium';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/AirbnbCerealMedium.ttf');
+}
+@font-face {
+  font-family: 'Cereal Bold';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/AirbnbCerealBold.ttf');
+}
+@font-face {
+  font-family: 'Cereal Black';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/AirbnbCerealBlack.ttf');
+}
+@font-face {
+  font-family: 'Cereal Book';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/AirbnbCerealBook.ttf');
+}
+
+/* fonts */
+
+.paragraphs {
+  font-family: 'Cereal Medium';
+}
+
+.date {
+  font-family: 'Cereal Light';
+}
+
+.user {
+  font-family: 'Cereal Bold';
+}
+
+.rating {
+  font-family: 'Cereal Book';
+}
+
+.container {
+  display: flex;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+.flex-container {
+  /* We first create a flex layout context */
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+}
+
+.flex-item {
+  flex: auto;
+  padding: 5px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  width: 50%;
+}
+
+.flex-container-post {
+  /* We first create a flex layout context */
+  display: flex;
+  flex-flow: row wrap;
+  padding: 5px;
+  margin: 0;
+  border-radius: 15px;
+  border: 2px solid rgb(177, 176, 176);
+  margin-bottom: 5px;
+  margin-top: 10px;
+
+}
+
+.flex-post {
+  width: 48%;
+  padding-left: 4px;
+  margin-bottom: 4px;
+  margin-left: 2px;
+  padding-top: 5px;
+  padding: 6px;
+
+}
+
+.flex-container-reviews {
+  display: block;
+  overflow: auto;
+  max-height: 400px;
+  margin-bottom: 5px;
+  margin-top: 20px;
+  border: solid rgb(177, 176, 176);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.button {
+  cursor: pointer !important;
+  display: inline-block !important;
+  margin: 0px !important;
+  position: relative !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  width: auto !important;
+  touch-action: manipulation !important;
+  font-family: 'Cereal Bold' !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  border-radius: 10px !important;
+  padding: 10px 20px !important;
+  border: solid rgb(177, 176, 176) !important;
+  background: rgb(255, 255, 255);
+  color: rgb(34, 34, 34) !important;
+  transition: .3s;
+}
+
+.button:hover {
+  background:rgb(214, 213, 213)
+}
