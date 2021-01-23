@@ -153,7 +153,7 @@ export default function AddReviewModal(props) {
             <input className="rating-box" id="quantity" name="quantity" min="1" max="5" type="Number" value={comms} onChange={handleCommunication} required />
             {' '}
             {' '}
-            <span className="user">communication</span>
+            <span className="user">Communication</span>
           </label>
           <label htmlFor="quantity">
             <input className="rating-box" id="quantity" name="quantity" min="1" max="5" type="Number" value={loc} onChange={handleLocation} required />
@@ -171,7 +171,7 @@ export default function AddReviewModal(props) {
             <input className="rating-box" id="quantity" name="quantity" min="1" max="5" type="Number" value={val} onChange={handleValue} required />
             {' '}
             {' '}
-            <span className="user">value</span>
+            <span className="user">Value</span>
           </label>
           <br />
           <div className="user">

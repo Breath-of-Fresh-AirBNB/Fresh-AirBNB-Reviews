@@ -128,11 +128,12 @@
   padding: 10px 20px !important;
   border: solid rgb(129, 129, 129) !important;
   background: rgb(255, 255, 255);
-  color: rgb(34, 34, 34) !important;
+  color: rgb(34, 34, 34);
   transition: .3s;
 }
 .button:hover {
-  background:rgb(146, 219, 201)
+  background:rgb(255, 56, 92);
+  color: rgb(255, 255, 255);
 }
 .button:focus {
   outline: none;
