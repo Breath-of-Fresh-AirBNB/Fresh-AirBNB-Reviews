@@ -92,11 +92,13 @@
 /* properties for each review */
 .flex-post {
   width: 48%;
+  max-height: 400px;
   padding-left: 4px;
   margin-bottom: 4px;
   margin-left: 2px;
   padding-top: 5px;
   padding: 6px;
+  overflow: auto;
 }
 
 /* Modal reviews container */

@@ -16,7 +16,6 @@ import App from '../client/src/app.jsx';
 const person = [{
   homeId: 102, user: 'Joey', cleanliness: 1, communication: 5, checkIn: 5, accuracy: 3, location: 4, value: 2, post: 'strings', createdAt: '20200101',
 }];
-
 const persons = [{
   homeId: 102, user: 'Joey', cleanliness: 1, communication: 5, checkIn: 5, accuracy: 3, location: 4, value: 2, post: 'strings', createdAt: '20200101',
 }, {
