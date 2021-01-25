@@ -26,6 +26,7 @@ app.get('/reviews/:homeId', (req, res) => {
 });
 
 app.post('/reviews', (req, res) => {
+  console.log(req.body);
   Review.create(req.body, (err, result) => {
     if (err) res.status(400).send();
     res.status(200).send(result);

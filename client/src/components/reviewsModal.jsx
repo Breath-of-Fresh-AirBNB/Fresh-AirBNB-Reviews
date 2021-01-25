@@ -29,14 +29,15 @@ const useStyles = makeStyles((theme) => ({
     overflow: 'auto',
     width: 600,
     backgroundColor: theme.palette.background.paper,
-    border: '2px solid #000',
+    border: '2px solid rgb(117, 117, 117)',
     boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3),
     borderRadius: '15px',
+    outline: 'none',
   },
 }));
 
-export default function SimpleModal(props) {
+export default function ReviewsModal(props) {
   const classes = useStyles();
   const [modalStyle] = React.useState(getModalStyle);
   const [open, setOpen] = React.useState(false);
