@@ -15,6 +15,7 @@ const StarComponents = (props) => {
   });
 
   const rating = (vals.reduce((m, i) => m += i, 0) / vals.length);
+
   const useStyles = makeStyles({
     iconFilled: {
       color: '#FD385C',

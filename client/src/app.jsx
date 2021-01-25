@@ -36,7 +36,7 @@ class App extends React.Component {
   }
 
   getReviewsById() {
-    axios.get('http://localhost:3001/reviews/10')
+    axios.get(`http://localhost:3001/reviews/${(Math.floor(Math.random() * 100) + 1)}`)
       .then((results) => {
         this.setState({
           reviewsById: results.data,
@@ -95,4 +95,4 @@ export default App;
 //     })
 // }
 
-// ${(Math.floor(Math.random() * 100) + 1)
+// ${(Math.floor(Math.random() * 100) + 1)}
