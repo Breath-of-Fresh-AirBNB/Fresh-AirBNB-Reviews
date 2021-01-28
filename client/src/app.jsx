@@ -27,7 +27,6 @@ class App extends React.Component {
   }
 
   componentDidUpdate(prevProps) {
-    console.log('hello');
     if (this.props.location !== prevProps.location) this.getReviewsById(this.props.match.params.id);
   }
 
@@ -40,7 +39,8 @@ class App extends React.Component {
   }
 
   getReviewsById(path) {
-    axios.get(`/reviews/${path}`)
+    console.log(path);
+    axios.get(`http://localhost:3003/reviews/${path}`)
       .then((results) => {
         this.setState({
           reviewsById: results.data,
