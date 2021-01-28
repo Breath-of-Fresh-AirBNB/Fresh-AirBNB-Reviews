@@ -26,8 +26,9 @@ class App extends React.Component {
     this.getReviewsById(this.props.match.params.id);
   }
 
-  componentDidUpdate() {
-    this.getReviewsById(this.props.match.params.id);
+  componentDidUpdate(prevProps) {
+    console.log('hello');
+    if (this.props.location !== prevProps.location) this.getReviewsById(this.props.match.params.id);
   }
 
   handleNewPost(newReview) {
