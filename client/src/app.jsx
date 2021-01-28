@@ -19,12 +19,15 @@ class App extends React.Component {
     this.state = {
       reviewsById: [],
     };
-
     this.handleNewPost = this.handleNewPost.bind(this);
   }
 
   componentDidMount() {
-    this.getReviewsById();
+    this.getReviewsById(this.props.match.params.id);
+  }
+
+  componentDidUpdate() {
+    this.getReviewsById(this.props.match.params.id);
   }
 
   handleNewPost(newReview) {
@@ -35,8 +38,8 @@ class App extends React.Component {
       });
   }
 
-  getReviewsById() {
-    axios.get(`http://localhost:3001/reviews/${(Math.floor(Math.random() * 100) + 1)}`)
+  getReviewsById(path) {
+    axios.get(`http://localhost:3001/reviews/${path}`)
       .then((results) => {
         this.setState({
           reviewsById: results.data,
@@ -77,22 +80,3 @@ class App extends React.Component {
 }
 
 export default App;
-
-// getReviewsById() {
-//   axios.get('http://localhost:3001/reviews/10')
-//     .then((results) => {
-//       this.setState({
-//         reviewsById: results.data,
-//       });
-//     });
-// }
-// getAllReviewsById() {
-//   axios.get('http://loaclhost:3001/reviews')
-//     .then((results) => {
-//       this.setState({
-//         reviews: results.data,
-//       })
-//     })
-// }
-
-// ${(Math.floor(Math.random() * 100) + 1)}

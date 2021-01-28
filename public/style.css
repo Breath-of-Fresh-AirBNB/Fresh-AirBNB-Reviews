@@ -1,52 +1,26 @@
-@font-face {
-  font-family: 'Cereal Extra Bold';
-  font-style: normal;
-  font-weight: 400;
-  src: url('./fonts/AirbnbCerealExtraBold.ttf');
-}
-@font-face {
-  font-family: 'Cereal Light';
-  font-style: normal;
-  font-weight: 400;
-  src: url('./fonts/AirbnbCerealLight.ttf');
-}
-@font-face {
-  font-family: 'Cereal Medium';
-  font-style: normal;
-  font-weight: 400;
-  src: url('./fonts/AirbnbCerealMedium.ttf');
-}
-@font-face {
-  font-family: 'Cereal Bold';
-  font-style: normal;
-  font-weight: 400;
-  src: url('./fonts/AirbnbCerealBold.ttf');
-}
-@font-face {
-  font-family: 'Cereal Black';
-  font-style: normal;
-  font-weight: 400;
-  src: url('./fonts/AirbnbCerealBlack.ttf');
-}
-@font-face {
-  font-family: 'Cereal Book';
-  font-style: normal;
-  font-weight: 400;
-  src: url('./fonts/AirbnbCerealBook.ttf');
-}
-
 /* fonts */
 .paragraphs {
-  font-family: 'Cereal Medium';
+  font-family: 'Montserrat, sans-serif';
+  font-style: normal;
+  font-weight: 500;
 }
+
 .date {
-  font-family: 'Cereal Light';
+  font-family: 'Montserrat, sans-serif';
+  font-style: normal;
+  font-weight: 100;
 }
+
 .user {
-  font-family: 'Cereal Bold';
+  font-family: 'Montserrat, sans-serif';
+  font-style: normal;
+  font-weight: 800;
 }
+
 .rating {
-  font-family: 'Cereal Book';
+  font-family: 'Montserrat, sans-serif';
+  font-style: normal;
+  font-size: 600;
 }
 
 /* Overall Container for page */
@@ -56,6 +30,11 @@
   margin-left: 20%;
 }
 
+.mainContainer {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
 /* first flex container for Ratings */
 .flex-container {
   display: flex;
@@ -66,8 +45,11 @@
 }
 .mostrecentreviews {
   margin-bottom: 10px;
-  font-family: 'Cereal Bold';
+  font-family: 'Montserrat, sans-serif';
+  font-style: normal;
+  font-weight: 600;
 }
+
 .flex-item {
   flex: auto;
   padding: 5px;
@@ -123,7 +105,9 @@
   text-decoration: none !important;
   width: auto !important;
   touch-action: manipulation !important;
-  font-family: 'Cereal Bold' !important;
+  font-family: 'Montserrat, sans-serif' !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
   font-size: 16px !important;
   line-height: 20px !important;
   border-radius: 10px !important;
@@ -159,25 +143,33 @@
   padding-right: 4px;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-family: 'Cereal Medium';
+  font-family: 'Montserrat, sans-serif';
+  font-style: normal;
+  font-weight: 400;;
   outline: none;
 
 }
 .rating-box {
-  max-width: 30px;
+  max-width: 40px;
   border: solid rgb(129, 129, 129);
-  font-family: 'Cereal Medium';
+  font-family: 'Montserrat, sans-serif';
+  font-style: normal;
+  font-weight: 400;
   border-radius: 4px;
   outline: none;
 }
 .date-box {
   max-width: 150px;
   border-radius: 4px;
-  font-family: 'Cereal Medium';
+  font-family: 'Montserrat, sans-serif';
+  font-style: normal;
+  font-weight: 400;
   border: solid rgb(129, 129, 129);
 }
 .name-box {
   border-radius: 4px;
-  font-family: 'Cereal Medium';
+  font-family: 'Montserrat, sans-serif';
+  font-style: normal;
+  font-weight: 400;
   border: solid rgb(129, 129, 129);
 }
