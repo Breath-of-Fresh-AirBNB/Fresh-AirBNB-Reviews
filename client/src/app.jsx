@@ -26,20 +26,21 @@ class App extends React.Component {
     this.getReviewsById(this.props.match.params.id);
   }
 
-  componentDidUpdate() {
-    this.getReviewsById(this.props.match.params.id);
+  componentDidUpdate(prevProps) {
+    console.log('hello');
+    if (this.props.location !== prevProps.location) this.getReviewsById(this.props.match.params.id);
   }
 
   handleNewPost(newReview) {
     console.log(newReview);
-    axios.post('http://localhost:3001/reviews', newReview)
+    axios.post('/reviews', newReview)
       .then(() => {
-        this.getReviewsById();
+        this.getReviewsById(this.props.match.params.id);
       });
   }
 
   getReviewsById(path) {
-    axios.get(`http://localhost:3001/reviews/${path}`)
+    axios.get(`/reviews/${path}`)
       .then((results) => {
         this.setState({
           reviewsById: results.data,

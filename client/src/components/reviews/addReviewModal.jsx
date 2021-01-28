@@ -117,6 +117,15 @@ export default function AddReviewModal(props) {
       createdAt: dates,
     });
     handleClose();
+    setValue(1);
+    setCheckIn(1);
+    setLocation(1);
+    setCommunication(1);
+    setCleanliness(1);
+    setAccuracy(1);
+    setDate(date);
+    setUser('');
+    setPost('');
   };
 
   const body = (

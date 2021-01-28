@@ -15,5 +15,5 @@ ReactDom.render(
     </Switch>
   </HashRouter>,
 
-  document.getElementById('reviews'),
+  document.getElementById('Randal'),
 );

@@ -4,7 +4,7 @@ const path = require('path');
 
 const Review = require('../database/review.js');
 
-const PORT = 3001;
+const PORT = 3003;
 const app = express();
 
 app.use(express.json());
@@ -26,7 +26,6 @@ app.get('/reviews/:homeId', (req, res) => {
 });
 
 app.post('/reviews', (req, res) => {
-  console.log(req.body);
   Review.create(req.body, (err, result) => {
     if (err) res.status(400).send();
     res.status(200).send(result);
