@@ -19,7 +19,6 @@ class App extends React.Component {
     this.state = {
       reviewsById: [],
     };
-
     this.handleNewPost = this.handleNewPost.bind(this);
   }
 
@@ -77,22 +76,3 @@ class App extends React.Component {
 }
 
 export default App;
-
-// getReviewsById() {
-//   axios.get('http://localhost:3001/reviews/10')
-//     .then((results) => {
-//       this.setState({
-//         reviewsById: results.data,
-//       });
-//     });
-// }
-// getAllReviewsById() {
-//   axios.get('http://loaclhost:3001/reviews')
-//     .then((results) => {
-//       this.setState({
-//         reviews: results.data,
-//       })
-//     })
-// }
-
-// ${(Math.floor(Math.random() * 100) + 1)}
