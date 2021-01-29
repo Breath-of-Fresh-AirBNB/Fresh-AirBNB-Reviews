@@ -32,7 +32,7 @@ class App extends React.Component {
 
   handleNewPost(newReview) {
     console.log(newReview);
-    axios.post('/reviews', newReview)
+    axios.post('http://localhost:3003/reviews', newReview)
       .then(() => {
         this.getReviewsById(this.props.match.params.id);
       });
