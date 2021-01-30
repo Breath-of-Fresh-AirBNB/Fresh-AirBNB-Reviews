@@ -32,7 +32,7 @@ class App extends React.Component {
 
   handleNewPost(newReview) {
     console.log(newReview);
-    axios.post('http://localhost:3003/reviews', newReview)
+    axios.post('http://3.89.104.50:3003/reviews', newReview)
       .then(() => {
         this.getReviewsById(this.props.match.params.id);
       });
@@ -40,7 +40,7 @@ class App extends React.Component {
 
   getReviewsById(path) {
     console.log(path);
-    axios.get(`http://localhost:3003/reviews/${path}`)
+    axios.get(`http://3.89.104.50:3003/reviews/${path}`)
       .then((results) => {
         this.setState({
           reviewsById: results.data,
